@@ -51,7 +51,7 @@ const projects = [
     description: "An AI-driven documentation assistant that indexes repos and answers developer queries instantly.",
     tags: ["Next.js", "TypeScript", "Node.js", "Tailwind CSS"],
     image: "/DocBot.jpg", // Fixed: Added missing leading slash to avoid Next.js Image crash
-    liveUrl: "https://analytics-demo.vercel.app",
+    liveUrl: "https://doc-bot-eosin.vercel.app/",
   },
 ];
 
