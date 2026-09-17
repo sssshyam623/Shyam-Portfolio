@@ -61,14 +61,14 @@ export default function Projects() {
   // Download CV Handler
   const handleDownloadCV = async () => {
     try {
-      const response = await fetch("/Resume_Shyamshree.pdf");
+      const response = await fetch("/ResumeOFShyamshreeMerged.pdf");
       if (!response.ok) throw new Error("Resume file not found");
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       
       const link = document.createElement("a");
       link.href = url;
-      link.download = "Shyamshree_Resume.pdf";
+      link.download = "ResumeOFShyamshreeMerged.pdf";
       document.body.appendChild(link);
       link.click();
       
