@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Home() {
   const socials = [
-    { icon: <GitFork size={18} />, href: "#", label: "GitHub" },
-    { icon: <Link2 size={18} />, href: "#", label: "LinkedIn" },
-    { icon: <span className="text-sm font-bold">𝕏</span>, href: "#", label: "Twitter" },
-    { icon: <Mail size={18} />, href: "#", label: "Email" },
+    { icon: <GitFork size={18} />, href: "https://github.com/sssshyam623/", label: "GitHub" },
+    { icon: <Link2 size={18} />, href: "https://www.linkedin.com/in/shyam702/", label: "LinkedIn" },
+    { icon: <span className="text-sm font-bold">𝕏</span>, href: "", label: "Twitter" },
+    { icon: <Mail size={18} />, href: "shyam20042203@gmail.com", label: "Email" },
   ];
 
   return (
