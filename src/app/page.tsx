@@ -1,15 +1,8 @@
-import { GitFork, Link2, Mail, ArrowRight, Briefcase, Code2, Star, Clock } from "lucide-react";
+import { GitFork, Link2, Mail, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  const stats = [
-    { icon: <Clock size={18} />, value: "2+", label: "Years Experience" },
-    { icon: <Briefcase size={18} />, value: "15+", label: "Projects Completed" },
-    { icon: <Code2 size={18} />, value: "10+", label: "Technologies" },
-    { icon: <Star size={18} />, value: "5★", label: "Client Ratings" },
-  ];
-
   const socials = [
     { icon: <GitFork size={18} />, href: "#", label: "GitHub" },
     { icon: <Link2 size={18} />, href: "#", label: "LinkedIn" },
@@ -87,20 +80,6 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
-
-      <div className="absolute bottom-0 left-0 right-0 border-t" style={{ borderColor: "var(--border)", background: "var(--bg-secondary)" }}>
-        <div className="max-w-6xl mx-auto px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((s, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg gradient-btn flex items-center justify-center text-white">{s.icon}</div>
-              <div>
-                <div className="text-xl font-bold text-white">{s.value}</div>
-                <div className="text-xs text-slate-500">{s.label}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
